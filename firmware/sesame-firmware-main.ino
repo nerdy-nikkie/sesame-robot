@@ -27,6 +27,11 @@
 #define OLED_RESET -1
 #define OLED_I2C_ADDR 0x3C
 
+// --- Tachikoma mode ---
+// true: boot and idle with the Tachikoma eye (big white eye with three pinholes).
+// false: the original Sesame faces. All faces stay available via the web UI / API either way.
+#define TACHIKOMA_FACES true
+
 // I2C Pins for Distro Board V2 / V3
 //#define I2C_SDA 8
 //#define I2C_SCL 9
@@ -188,6 +193,11 @@ const FaceFpsEntry faceFpsEntries[] = {
   { "talk_confused", 1 },
   { "thinking", 1 },
   { "talk_thinking", 1 },
+  // Tachikoma faces
+  { "tachikoma", 1 },
+  { "tachikoma_blink", 8 },
+  { "tachikoma_happy", 1 },
+  { "tachikoma_surprised", 1 },
 };
 
 
@@ -744,7 +754,7 @@ void setup() {
   delay(10);
   
   // Show rest face on startup without moving motors
-  setFace("rest");
+  setFace(TACHIKOMA_FACES ? "tachikoma" : "rest");
   
   Serial.println(F("HTTP server & Captive Portal started."));
 }
@@ -1012,7 +1022,7 @@ void enterIdle() {
   idleActive = true;
   idleBlinkActive = false;
   idleBlinkRepeatsLeft = 0;
-  setFaceWithMode("idle", FACE_ANIM_BOOMERANG);
+  setFaceWithMode(TACHIKOMA_FACES ? "tachikoma" : "idle", FACE_ANIM_BOOMERANG);
   scheduleNextIdleBlink(3000, 7000);
 }
 
@@ -1030,14 +1040,14 @@ void updateIdleBlink() {
       if (idleBlinkRepeatsLeft == 0 && random(0, 100) < 30) {
         idleBlinkRepeatsLeft = 1; // double blink
       }
-      setFaceWithMode("idle_blink", FACE_ANIM_ONCE);
+      setFaceWithMode(TACHIKOMA_FACES ? "tachikoma_blink" : "idle_blink", FACE_ANIM_ONCE);
     }
     return;
   }
 
   if (currentFaceMode == FACE_ANIM_ONCE && faceAnimFinished) {
     idleBlinkActive = false;
-    setFaceWithMode("idle", FACE_ANIM_BOOMERANG);
+    setFaceWithMode(TACHIKOMA_FACES ? "tachikoma" : "idle", FACE_ANIM_BOOMERANG);
     if (idleBlinkRepeatsLeft > 0) {
       idleBlinkRepeatsLeft--;
       scheduleNextIdleBlink(120, 220);

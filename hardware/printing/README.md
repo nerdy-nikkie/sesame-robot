@@ -2,7 +2,7 @@
 
 Sesame is designed to be printed in **PLA**. Most parts print without supports, but the top cover needs supports in targeted areas. Below is a quick reference for each component:
 
-Note: There are 3 different top cover styles currently available. **Enclosed v91 is recommended** as it's the most modern design with magnetic hat mounts, covered display wires, and multicolor detail support. See [Top Covers](stl/top-covers/) for details on all styles.
+Note: There are 4 different top cover styles currently available (including the new Tachikoma cover). **Enclosed v91 is recommended** as it's the most modern design with magnetic hat mounts, covered display wires, and multicolor detail support. See [Top Covers](stl/top-covers/) for details on all styles.
 
 > [!NOTE]
 > **Battery Upgrade:** The internal frame design has been slightly altered to fit the new recommended battery (Bambu Lab 14500 Li-ion). If you have an older Sesame and want to upgrade to this battery, simply print the new internal frame and install it.
@@ -29,6 +29,7 @@ Note: There are 3 different top cover styles currently available. **Enclosed v91
 | Internal Frame | No                | [Internal-Frame-v121.stl](stl/Internal-Frame-v121.stl) |
 | Bottom Cover   | No                | [Bottom-Cover-v121.stl](stl/Bottom-Cover-v121.stl)     |
 | Top Cover      | Yes               | [Top Covers](stl/top-covers/)                          |
+| Tachikoma Kit (optional) | See kit README | [Tachikoma Kit](stl/tachikoma/) |
 
 ### Top Cover Settings (Original Style)
 

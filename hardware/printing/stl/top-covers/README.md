@@ -8,3 +8,6 @@ Modern Version of the enclosed top cover with cat ears instead of stubby ears! U
 
 ## No Ears v100
 Template for designing your own ears for Sesame. The areas right next to where the ears ussually go is a little thin so this version is only really meant for desiging ears onto. (Includes all previously mentioned features)
+
+## Tachikoma
+See the [Tachikoma Kit](../tachikoma/) for the Tachikoma cover, legs and details.
