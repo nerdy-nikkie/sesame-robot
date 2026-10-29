@@ -273,4 +273,4 @@ If you are using the V2 Build kit board, you can skip this step! It is pre-flash
 2. Use Arduino IDE to flash the full firmware bundle (motors + faces). Detailed notes live in [firmware/README.md](../../firmware/README.md).
 3. Connect to Sesame’s Wi-Fi AP, load the control page, and trigger a pose to verify everything moves as expected.
 
-That’s it. You’ve built Sesame! From here you can design new poses in [Sesame Studio](../../software/sesame-studio/README.md) or tweak the hardware per [hardware/README.md](../../hardware/README.md), or whatever you want!
+That’s it. You’ve built Sesame! From here you can design new poses in [Sesame Studio](https://github.com/dorianborian/sesame-studio) or tweak the hardware per [hardware/README.md](../../hardware/README.md), or whatever you want!

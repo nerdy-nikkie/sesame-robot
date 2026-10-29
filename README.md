@@ -73,7 +73,7 @@ Upload the code from the **[Firmware Directory](firmware/README.md)**.
 *   Configure WiFi AP settings
 
 ### 5. Create Animations 
-Use **[Sesame Studio](software/sesame-studio/README.md)** to visually design poses and sequences for your robot.
+Use **[Sesame Studio](https://github.com/dorianborian/sesame-studio)** to visually design poses and sequences for your robot.
 
 <img width="100%" height="728" alt="sesame-wakeup-gif" src="https://github.com/user-attachments/assets/a4951195-4253-40a4-a87d-d14fad57ff5f" />
 
@@ -82,12 +82,13 @@ Use **[Sesame Studio](software/sesame-studio/README.md)** to visually design pos
 ## Software & Firmware
 
 ### Sesame Studio
-Sesame Studio is a standalone desktop application included in `software/sesame-studio/`. It allows you to:
-*   Visually pose the robot using a schematic interface.
-*   Generate C++ code for servo angles automatically.
-*   Sequence frames into complex animations.
+Sesame Studio is a desktop application for designing animations, sequencing poses, and creating OLED expressions. It is maintained in its own dedicated repository at [dorianborian/sesame-studio](https://github.com/dorianborian/sesame-studio). It allows you to:
+*   Visually pose the robot in a 3D viewport using the actual printed STL geometry.
+*   Sequence frames into complex animations with custom transitions and delays.
+*   Design 128x64 OLED face bitmaps or directly open, edit, and save Arduino `face-bitmaps.h` files.
+*   Generate C++ code for servo angles and bitmaps ready to paste into firmware.
 
-[**> Go to Sesame Studio**](software/sesame-studio/README.md)
+[**> Go to Sesame Studio Repository**](https://github.com/dorianborian/sesame-studio)
 
 
 ### Sesame Simulator

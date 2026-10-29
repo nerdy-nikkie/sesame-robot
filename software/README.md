@@ -4,13 +4,17 @@ Software applications for making the most of your Sesame Robot.
 
 ## Tools
 
-### [Sesame Studio](sesame-studio/)
-A visual Python-based tool for creating animations.
+### [Sesame Studio](https://github.com/dorianborian/sesame-studio)
+A PySide6-based animation, pose sequencing, and OLED face design tool.
 
-- **Graphical Interface**: layout joints on screen with guides.
-- **Code Generator**: outputs C++ code ready for the firmware.
+- **3D Posable Viewport**: Real printed-part geometry, live-driven by servo angles, with joint calibration.
+- **Timeline Editor**: Sequence, reorder, retime, and preview poses in real time.
+- **Face Editor & Firmware Editor**: Paint 128x64 OLED expressions, or directly open, edit, and save Arduino `face-bitmaps.h` files with live hex preview.
+- **Projects & Export**: Save/load `.sesproj` files, export firmware-ready code with an in-app integration guide.
 
-[Go to Sesame Studio Documentation ->](sesame-studio/README.md)
+**Note:** Sesame Studio is maintained in its own dedicated repository at [https://github.com/dorianborian/sesame-studio](https://github.com/dorianborian/sesame-studio).
+
+[Go to Sesame Studio Repository ->](https://github.com/dorianborian/sesame-studio)
 
 ### Sesame Companion App
 A Python application for advanced robot control and interaction over your local network.
